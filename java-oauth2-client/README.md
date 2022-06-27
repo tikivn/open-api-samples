@@ -26,7 +26,7 @@ oauth2.client.registration.another.token-uri=https://api.tiki.vn/sc/oauth2/token
 oauth2.client.registration.another.user-info-uri=https://api.tiki.vn/integration/v2/sellers/me
 ```
 
-You must define the token endpoint auth method authentication-method (client_secret_post or client_secret_basic) corresponding to it in your app registration (basic header or body request). And "redirect_uri" (for example "http://localhost:9003/callback") match one of the OAuth 2.0 Client's pre-registered redirect urls
+You must define the token endpoint auth method authentication-method (client_secret_post or client_secret_basic) corresponding to it in your app registration (basic header or body request). And "redirect_uri" (for example "http://localhost:9003/callback") match one of the OAuth 2.0 Client's pre-registered redirect urls. **If you're using an in-house app, leave redirect_uri empty.**
 
 # Step 2: Implement ClientRegistration and a repository hold these ClientRegistration instances 
 Implement ClientRegistration.class for OAuth2 providers (Tiki, Another)
